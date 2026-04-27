@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="Ramah.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css" integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Datatype:wdth,wght@62.5,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,8₀;1,9₀&display=swap" rel="stylesheet">
+<script src="Ramah.js"></script>
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <title>Happy Birthday Ramah-can</title>
+</head>
+<body>
+  
+
+ <audio autoplay loop>
+  <source src="./Audio/scottishperson-sound-effect-happy-birthday-music-box-333245.mp3" type="audio/mp3">
+ </audio>
+
+<script>
+function createFirework(x, y) {
+  const colors = ["#ff4d4d", "#ffff66", "#66ffcc", "#66a3ff", "#ff66ff"];
+
+  for (let i = 0; i < 40; i++) {
+    let particle = document.createElement("div");
+    particle.className = "firework";
+    document.body.appendChild(particle);
+
+    let angle = Math.random() * 2 * Math.PI;
+    let distance = Math.random() * 150;
+
+    let color = colors[Math.floor(Math.random() * colors.length)];
+    particle.style.background = color;
+    particle.style.left = x + "px";
+    particle.style.top = y + "px";
+
+    let xMove = Math.cos(angle) * distance;
+    let yMove = Math.sin(angle) * distance;
+
+    particle.animate([
+      { transform: "translate(0,0)", opacity: 1 },
+      { transform: `translate(${xMove}px, ${yMove}px)`, opacity: 0 }
+    ], {
+      duration: 1000,
+      easing: "ease-out"
+    });
+
+    setTimeout(() => particle.remove(), 1000);
+  }
+}
+
+// Auto fireworks
+setInterval(() => {
+  let x = Math.random() * window.innerWidth;
+  let y = Math.random() * window.innerHeight / 2;
+  createFirework(x, y);
+}, 800);
+
+// Click for fireworks
+document.addEventListener("click", (e) => {
+  createFirework(e.clientX, e.clientY);
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<!-- second fireworks --->
+
+
+
+
+
+  
+        <div class="card">
+          
+  
+           <img width="120" height="100" id="cake"
+      class="duration-800 delay-500 3.6s hover:scale-125" src="https://img.icons8.com/?size=100&id=DXzIJvWGp6At&format=png&color=000000" alt="birthday-cake--v1"/>
+  
+           
+            
+            
+           <img width="80" height="80" 
+           class="bounce" id="black1" src="https://img.icons8.com/?size=100&id=pFlivQ1oSoJE&format=png&color=000000" alt="birthday-cake--v1"/>
+  
+          <img width="100" height="100" 
+           class="bounce" id="black2" src="https://img.icons8.com/?size=100&id=pFlivQ1oSoJE&format=png&color=000000" alt="birthday-cake--v1"/>
+  
+                      <img width="80" height="80" 
+           class="bounce" id="black3" src="https://img.icons8.com/?size=100&id=pFlivQ1oSoJE&format=png&color=000000" alt="birthday-cake--v1"/>
+  
+                      <img width="100" height="100"
+           class="bounce" id="black4" src="https://img.icons8.com/?size=100&id=pFlivQ1oSoJE&format=png&color=000000" alt="birthday-cake--v1"/>
+  
+
+
+  
+             
+           <box-icon class="w-[1.4rem] float h-[1.4rem]" id="bal" name='balloon' type='solid'  color='#17e792' ></box-icon>
+           <box-icon class="w-[1.5rem] float h-[1.5rem] " id="bal2" name='balloon' type='solid'  color='#6367FF' ></box-icon>
+           <box-icon class="w-[1rem] float h-[1rem]" id="bal3" name='balloon' type='solid'  color='#FF0B55' ></box-icon>
+           <box-icon class="w-[1.2rem] float h-[1.2rem]" id="bal4" name='balloon' type='solid'  color='#17e792' ></box-icon>
+           <box-icon class="w-[1.3rem] float h-[1.3rem]" id="bal5" name='balloon' type='solid'  color='#F8DE22' ></box-icon>
+           <box-icon class="w-[1.6rem] float h-[1.6rem]" id="bal6" name='balloon' type='solid'  color='#17e792' ></box-icon>
+           <box-icon class="w-[1.8rem] float h-[1.8rem]" id="bal7" name='balloon' type='solid'  color='#6420AA' ></box-icon>
+           <bEA047Eox-icon class="w-[1.6rem] float h-[1.6rem]" id="bal8" name='balloon' type='solid'  color='#F637EC' ></bEA047Eox-icon>
+           <box-icon class="w-[1.3rem] float h-[1.3rem]" id="bal9" name='balloon' type='solid'  color='#FF0B55' ></box-icon>
+           <box-icon class="w-[1.2rem] float h-[1.2rem]" id="bal10" name='balloon' ]type='solid'  color='#17e792' ></box-icon>
+           <box-icon class="w-[1.5rem] float h-[1.5rem]" id="bal11" name='balloon' type='solid'  color='#6367FF' ></box-icon>
+           <box-icon class="w-[1.3rem] float h-[1.3rem]" id="bal12" name='balloon' type='solid'  color='#F8DE22' ></box-icon>
+           <box-icon class="w-[1.4rem] float h-[1.4rem]" id="bal13" name='balloon' type='solid'  color='#17e792' ></box-icon>
+           <box-icon class="w-[1.4rem] float h-[1.4rem]" id="bal14" name='balloon' type='solid'  color='#F637EC' ></box-icon>
+              
+
+           
+
+             <div id="text">
+             <h1 class="text-[3rem] happy">Happy</h1>
+              <h1 class="text-[2.5rem] font-extrabold birth">Birthday</h1> 
+              <h1 class="text-[3rem]  ramah">Ramah </h1> <h1 class="br text-2xl">! ! !</h1>
+                  </div>
+        </div>
+
+      
+      
+
+<a href="Happy birthday Ramah.html">
+<button class="button animate-bounce 4s duration-1000  hover:animate-none duration-500  3.6s hover:scale-125">Click Me!</button>
+</a>
+
+
+<body>
+</html>

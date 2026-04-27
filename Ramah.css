@@ -1,0 +1,352 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Datatype:wdth,wght@62.5,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playwrite+NZ+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+
+body {
+  background-image: url(./img/Pink\ Bubbles\ Phone\ Wallpaper\ .png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+
+  .firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  
+
+.card {
+  position: relative;
+  width: 60%;
+  height: 500px;
+  background-color: rgba(246, 182, 225, 0.623);
+  filter: brightness(100%) contrast(50%) drop-shadow(50%) sepia(0) blur(100%) hue-rotate(45% pink, purple, rgba(246, 182, 225, 0.623));
+  
+  display: flex;
+
+  border-radius: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+
+#cake{
+  position: absolute;
+  top: 4rem;
+}
+
+#bal {
+  position: absolute;
+  top: 8rem;
+  right: 2rem;
+}
+
+#bal2 {
+  position: absolute;
+  top: 7rem;
+  right: 3.5rem;
+}
+
+#bal3 {
+  position: absolute;
+  top: 6rem;
+  right: 1.6rem;
+}
+
+#bal4 {
+  position: absolute;
+  top: 8rem;
+  right: 5rem;
+}
+
+#bal5 {
+  position: absolute;
+  top: 6rem;
+  right: 5.7rem;
+}
+
+#bal6 {
+  position: absolute;
+  top: 8rem;
+  left: 1.5rem;
+}
+
+#bal7 {
+  position: absolute;
+  top: 7.2rem;
+  left: 3rem;
+}
+
+#bal8 {
+  position: absolute;
+  top: 6rem;
+  left: 2rem;
+}
+
+#bal9 {
+  position: absolute;
+  top: 5.5rem;
+  left: 4rem;
+}
+
+#bal10 {
+  position: absolute;
+  top: 8rem;
+  left:5rem;
+}
+
+#bal11 {
+  position: absolute;
+  top:5.8rem;
+  left: 5.7rem;
+}
+#bal12 {
+  position: absolute;
+  top:5.8rem;
+  left: 2rem;
+}
+#bal13 {
+  position: absolute;
+  top:5rem;
+  right: 3.6rem;
+}
+#bal14 {
+  position: absolute;
+  top: 8.5rem;
+  left: 5.3rem;
+}
+
+#black1 {
+  position: absolute;
+  top: 18rem;
+  left: 0.1rem;
+}
+
+#black2 {
+  position: absolute;
+  top: 14rem;
+  left: 2.7rem;
+}
+
+#black3 {
+  position: absolute;
+  top: 14rem;
+  right: 3.5em;
+}
+
+#black4 {
+  position: absolute;
+  top: 18rem;
+  right: 0.1rem;
+}
+
+
+
+.bounce {
+  animation: bounce 6s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+#text {
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+  .happy {
+  font-family: "Playwrite NZ", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.birth {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ramah {
+   font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.br {
+  font-style: initial;
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+}
+
+
+.float {
+  animation: 4s float 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+     opacity: 1;
+  }
+  50% {
+   
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+
+.happy {
+  animation: happyAnimation 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+
+@keyframes happyAnimation {
+  from {
+    filter: blur(10px) contrast(5px) ;
+    opacity: 0;
+  }
+ 
+  to {
+    filter: blur(10px) contrast(5px) ;
+    opacity: 1;
+  }
+ 
+}
+
+
+.birth {
+  animation: birthAnimation 3s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+
+@keyframes birthAnimation {
+  from {
+    transform: translatex(100%);
+    filter: blur(10px) contrast(5px);
+    opacity: 0;
+  }
+ 
+  to {
+    transform: translatex(0);
+    filter: blur(10px) contrast(5px) ;
+    opacity: 1;
+  }
+ 
+
+}
+
+
+
+.ramah {
+   font-family: "Pacifico", cursive;
+  animation: ramahAnimation 8s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+
+@keyframes ramahAnimation {
+  from {
+    color: rgb(199, 13, 199);
+    filter: blur(10px) contrast(5px);
+    opacity: 0;
+  }
+ 
+  to {
+     color: rgb(192, 0, 192);
+    filter: blur(10px) contrast(5px) ;
+    opacity: 1;
+  }
+ 
+
+}
+
+
+.br {
+   font-family: "Pacifico", cursive;
+  animation: brAnimation 1.8s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+
+@keyframes brAnimation {
+  from {
+    transform: translateY(100%);
+    filter: blur(10px) contrast(5px);
+    opacity: 0;
+  }
+ 
+  to {
+    transform: translateY(0);
+    filter: blur(10px) contrast(5px) ;
+    opacity: 1;
+  }
+ 
+
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  align-items: center;
+  padding: 12px 1rem;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.button:hover {
+  transform: scale(20px 20px);
+  
+}
